@@ -1,0 +1,38 @@
+\begin{table}[!htbp] \centering 
+  \caption{MINIMUM MARKET SIZE 5 HOTELS: PROPOSED MODEL} 
+  \label{tab:proposedmodel} 
+  \resizebox{7in}{!}{ 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Overall Quality}} \\ 
+\cline{2-6} 
+\\[-1.8ex] & \multicolumn{1}{c}{no fixed effects} & \multicolumn{1}{c}{$f_{n}$} & \multicolumn{1}{c}{$f_{n,t}$} & \multicolumn{1}{c}{$f_{n,t,C}$} & \multicolumn{1}{c}{$f_{n,t,C}+f_{G}$}\\ 
+\hline \\[-1.8ex] 
+ Penetration & 78.620^{***} & 57.763^{***} & 43.349^{***} & 31.374^{*} & 35.930^{***} \\ 
+ 
+ Brand & 0.026^{***} & 0.125^{***} & 0.123^{***} & 0.148^{***} & 0.160^{***} \\ 
+ 
+ Age & -0.0005^{***} & -0.0002^{***} & -0.002^{***} & -0.002^{***} & -0.002^{***} \\ 
+ 
+ Rooms & 0.0003^{***} & 0.0002^{***} & 0.0003^{***} & -0.001^{***} & -0.001^{***} \\ 
+ 
+ Penetration$\times$Brand & -32.409^{***} & -21.531^{***} & -35.095^{***} & -22.976^{*} & -30.140^{***} \\ 
+ 
+ Constant & 4.732^{***} &  &  &  &  \\ 
+ 
+\hline \\[-1.8ex] 
+Observations & \multicolumn{1}{c}{1,556,023} & \multicolumn{1}{c}{1,556,023} & \multicolumn{1}{c}{1,556,023} & \multicolumn{1}{c}{1,490,683} & \multicolumn{1}{c}{1,490,683} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.009}  & \multicolumn{1}{c}{0.082} & \multicolumn{1}{c}{0.297} & \multicolumn{1}{c}{0.525} & \multicolumn{1}{c}{0.537} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.009}  & \multicolumn{1}{c}{0.080} & \multicolumn{1}{c}{0.117} & \multicolumn{1}{c}{0.233} & \multicolumn{1}{c}{0.252} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Significance levels:}  & \multicolumn{5}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\  
+
+\end{tabular} 
+}
+\begin{tabular}{p{15cm}c}
+Where $f_{n,t,C}$ is the neighborhood specific fixed effect for each geographic cluster-defined neighborhood, $n$, each hotel class, $C$, in time, $t$, and $f_{G}$ is the TripAdvisor geographic market fixed effect to control for persistent TripAdvisor market quality level. The fixed effect $f_{n,t,C}$ allows us to set up the empirical design as it "freezes" the data for each hotel class in each neighborhood at each point in time.
+
+\end{tabular}
+\end{table} 
