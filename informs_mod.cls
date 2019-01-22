@@ -1200,7 +1200,7 @@
 
 \def\@maketitle{%
   \newpage
-  \theARTICLETOP
+%   \theARTICLETOP
   \theARTICLETITLE
   \theARTICLEAUTHORS
   \theARTICLEABSTRACT

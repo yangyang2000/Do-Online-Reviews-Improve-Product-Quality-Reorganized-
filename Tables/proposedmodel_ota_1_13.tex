@@ -1,2 +1,72 @@
+\begin{table}[!htbp] \centering 
+\LARGE
+  \caption{PENETRATION EFFECT ON QUALITY ACROSS SPECIFICATIONS} 
+  \label{tab:proposedmodel_ota} 
+  \resizebox{5.5in}{!}{ 
+\begin{tabular}{l D{.}{.}{-2} | D{.}{.}{-2} D{.}{.}{-2} D{.}{.}{-2} D{.}{.}{-2} D{.}{.}{-2} } 
+\\[-1.8ex]\hline 
+\\[-1.8ex]
+& \multicolumn{5}{c}{\textit{Overall Quality: Expedia Ratings}} \\ 
+\cline{2-7}
+& \multicolumn{1}{c|}{Raw Measures} & \multicolumn{5}{c}{Latent Measures} \\
+& \multicolumn{1}{c|}{\textit{no fixed effects}} & \multicolumn{1}{c}{\textit{no fixed effects}} & \multicolumn{1}{c}{$f_{n}$} & \multicolumn{1}{c}{$f_{n,t}$} & \multicolumn{1}{c}{$f_{n,t,C}$} & \multicolumn{1}{c}{$f_{n,t,C}+f_{G}$}\\ 
+\hline  
+ Penetration & 136.895^{**} & 146.174^{**} & 98.531^{**} & 135.634^{**} & 105.077^{**} & 71.255^{**} \\
+  & (2.484) & (1.585) & (17.909) & (20.380) & (18.506) & (21.131) \\ 
+ Brand & 0.352^{**} & 0.339^{**} & 0.336^{**} & 0.359^{**} & 0.363^{**} & 0.372^{**} \\ 
+  & (0.006) & (0.003) & (0.029) & (0.039) & (0.066) & (0.060) \\ 
+ Penetration$\times$Brand & -133.984^{**} & -140.424^{**} & -101.059^{**} & -116.705^{**} & -90.958^{**} & -77.137^{**} \\ 
+  & (2.810) & (1.737) & (12.459) & (16.372) & (25.236) & (25.622) \\ 
+ Constant & 3.615^{**} & 3.548^{**} &  &  &  &  \\ 
+  & (0.006) & (0.004) &  &  &  &  \\ 
+\hline  
+Observations & \multicolumn{1}{c|}{630,045} & \multicolumn{1}{c}{1,316,309} & \multicolumn{1}{c}{1,316,309} & \multicolumn{1}{c}{1,316,309} & \multicolumn{1}{c}{1,316,047} & \multicolumn{1}{c}{1,316,047} \\ 
+R$^{2}$ & \multicolumn{1}{c|}{0.075} & \multicolumn{1}{c}{0.095} & \multicolumn{1}{c}{0.282} & \multicolumn{1}{c}{0.396} & \multicolumn{1}{c}{0.587} & \multicolumn{1}{c}{0.669} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c|}{0.075} & \multicolumn{1}{c}{0.095} & \multicolumn{1}{c}{0.280} & \multicolumn{1}{c}{0.161} & \multicolumn{1}{c}{0.296} & \multicolumn{1}{c}{0.433} \\ 
+\hline 
+\\[-1.8ex]
+ & \multicolumn{5}{c}{\textit{Overall Quality: Hotels Ratings}} \\ 
+\cline{2-7}
+\hline 
+Penetration & 136.199^{**} & 140.255^{**} & 93.998^{**} & 128.272^{**} & 93.488^{**} & 56.651^{**} \\ 
+  & (2.018) & (1.266) & (16.804) & (17.356) & (14.795) & (16.155) \\
+ Brand & 0.359^{**} & 0.359^{**} & 0.330^{**} & 0.354^{**} & 0.313^{**} & 0.325^{**} \\ 
+  & (0.005) & (0.003) & (0.022) & (0.033) & (0.053) & (0.040) \\ 
+  Penetration$\times$Brand & -132.497^{**} & -131.410^{**} & -92.160^{**} & -106.343^{**} & -75.633^{**} & -59.610^{**} \\ 
+  & (2.248) & (1.374) & (13.496) & (13.588) & (13.984) & (16.401) \\ 
+ Constant & 3.681^{**} & 3.622^{**} &  &  &  &  \\ 
+  & (0.005) & (0.003) &  &  &  &  \\ 
+\hline  
+Observations & \multicolumn{1}{c}{834,935} & \multicolumn{1}{c}{1,278,252} & \multicolumn{1}{c}{1,278,252} & \multicolumn{1}{c}{1,278,252} & \multicolumn{1}{c}{1,277,992} & \multicolumn{1}{c}{1,277,992} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.084} & \multicolumn{1}{c}{0.136} & \multicolumn{1}{c}{0.317} & \multicolumn{1}{c}{0.452} & \multicolumn{1}{c}{0.658} & \multicolumn{1}{c}{0.716} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.084} & \multicolumn{1}{c}{0.136} & \multicolumn{1}{c}{0.315} & \multicolumn{1}{c}{0.240} & \multicolumn{1}{c}{0.419} & \multicolumn{1}{c}{0.515} \\ 
 
-%%% NOTE: The updated mkt_sci_final_1_6_19.csv results for Proposed OTA estimates are identical to proposedmodel_ota_se2.tex
+\hline 
+
+\\[-1.8ex] 
+ & \multicolumn{5}{c}{\textit{Overall Quality: Pooled OTA Ratings}} \\ 
+\hline 
+ Penetration & 141.476^{**} & 138.283^{**} & 93.838^{**} & 126.042^{**} & 93.947^{**} & 56.140^{*} \\ 
+  & (1.732) & (1.209) & (13.022) & (14.261) & (12.991) & (24.433) \\ 
+ Brand & 0.354^{**} & 0.332^{**} & 0.315^{**} & 0.334^{**} & 0.310^{**} & 0.313^{**} \\ 
+  & (0.004) & (0.003) & (0.022) & (0.033) & (0.064) & (0.060) \\ 
+Penetration$\times$Brand & -130.785^{**} & -123.769^{**} & -83.716^{**} & -98.257^{**} & -70.899^{**} & -56.667^{*} \\ 
+  & (1.911) & (1.322) & (9.646) & (11.644) & (20.772) & (25.284) \\ 
+ Constant & 3.621^{**} & 3.584^{**} &  &  &  &  \\ 
+  & (0.004) & (0.003) &  &  &  &  \\ 
+\hline 
+Observations & \multicolumn{1}{c}{1,042,294} & \multicolumn{1}{c}{1,448,933} & \multicolumn{1}{c}{1,448,933} & \multicolumn{1}{c}{1,448,933} & \multicolumn{1}{c}{1,448,669} & \multicolumn{1}{c}{1,448,669} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.092} & \multicolumn{1}{c}{0.131} & \multicolumn{1}{c}{0.305} & \multicolumn{1}{c}{0.437} & \multicolumn{1}{c}{0.644} & \multicolumn{1}{c}{0.707} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.092} & \multicolumn{1}{c}{0.131} & \multicolumn{1}{c}{0.303} & \multicolumn{1}{c}{0.226} & \multicolumn{1}{c}{0.399} & \multicolumn{1}{c}{0.505} \\ 
+\hline 
+
+\textit{Significance levels:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01} \\ 
+
+\end{tabular} 
+}
+\end{table} 
+
+\begin{flushleft}
+\small
+\textit{Note}. The fixed effect $f_{n,t,C}$ allows us to set up the empirical design as it "freezes" the data for each hotel class in each neighborhood at each point in time. $f_{G}$ is the geographic location (i.e. city,state) fixed effect to control for persistent differences in quality between cities.
+\end{flushleft}

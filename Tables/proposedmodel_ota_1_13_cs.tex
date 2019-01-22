@@ -1,0 +1,79 @@
+\begin{table}[!htbp] \centering 
+\LARGE
+  \caption{PENETRATION EFFECT ON QUALITY ACROSS SPECIFICATIONS-City State} 
+  \label{tab:proposedmodel_ota_cs} 
+  \resizebox{5.5in}{!}{ 
+\begin{tabular}{l D{.}{.}{-2} | D{.}{.}{-2} D{.}{.}{-2} D{.}{.}{-2} D{.}{.}{-2} D{.}{.}{-2} } 
+\\[-1.8ex]\hline 
+\\[-1.8ex]
+& \multicolumn{5}{c}{\textit{Overall Quality: Expedia Ratings}} \\ 
+\cline{2-7}
+& \multicolumn{1}{c|}{Raw Measures} & \multicolumn{5}{c}{Latent Measures} \\
+& \multicolumn{1}{c|}{\textit{no fixed effects}} & \multicolumn{1}{c}{\textit{no fixed effects}} & \multicolumn{1}{c}{$f_{n}$} & \multicolumn{1}{c}{$f_{n,t}$} & \multicolumn{1}{c}{$f_{n,t,C}$} & \multicolumn{1}{c}{$f_{n,t,C}+f_{G}$}\\ 
+\hline  
+ Penetration & 83.175^{**} & 79.861^{**} & 54.504^{**} & 74.545^{**} & 55.930^{**} & 36.553^{*} \\ 
+  & (1.498) & (1.383) & (11.916) & (13.651) & (9.331) & (16.386) \\ 
+ Brand & 0.285^{**} & 0.321^{**} & 0.335^{**} & 0.333^{**} & 0.281^{**} & 0.287^{**} \\ 
+  & (0.005) & (0.004) & (0.032) & (0.038) & (0.038) & (0.060) \\ 
+ Age (Years) & -0.798^{**} & -0.770^{**} & -0.723^{**} & -0.415^{**} & -0.385^{**} & -0.393^{**} \\ 
+  & (0.011) & (0.010) & (0.058) & (0.072) & (0.073) & (0.082) \\ 
+ Rooms (100) & 0.144^{**} & 0.162^{**} & 0.143^{**} & 0.150^{**} & -0.042^{*} & -0.060^{**} \\ 
+  & (0.002) & (0.002) & (0.024) & (0.029) & (0.021) & (0.018) \\ 
+ Penetration$\times$Brand & -81.307^{**} & -87.718^{**} & -67.504^{**} & -72.030^{**} & -53.207^{**} & -46.281^{**} \\ 
+  & (1.702) & (1.513) & (11.783) & (15.511) & (10.868) & (17.523) \\ 
+ Constant & 3.635^{**} & 3.639^{**} &  &  &  &  \\ 
+  & (0.005) & (0.004) &  &  &  &  \\ 
+\hline
+Observations & \multicolumn{1}{c|}{643,261} & \multicolumn{1}{c}{1,339,733} & \multicolumn{1}{c}{1,339,733} & \multicolumn{1}{c}{1,339,733} & \multicolumn{1}{c}{1,339,597} & \multicolumn{1}{c}{1,339,597} \\ 
+R$^{2}$ & \multicolumn{1}{c|}{0.021} & \multicolumn{1}{c}{0.016} & \multicolumn{1}{c}{0.118} & \multicolumn{1}{c}{0.283} & \multicolumn{1}{c}{0.469} & \multicolumn{1}{c}{0.554} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c|}{0.021} & \multicolumn{1}{c}{0.016} & \multicolumn{1}{c}{0.116} & \multicolumn{1}{c}{0.112} & \multicolumn{1}{c}{0.224} & \multicolumn{1}{c}{0.346} \\ 
+\hline 
+\\[-1.8ex]
+ & \multicolumn{5}{c}{\textit{Overall Quality: Hotels Ratings}} \\ 
+\cline{2-7}
+\hline 
+ Penetration & 84.157^{**} & 86.235^{**} & 60.803^{**} & 78.618^{**} & 58.268^{**} & 49.723^{*} \\ 
+  & (1.258) & (0.954) & (7.725) & (8.050) & (9.956) & (20.585) \\ 
+ Brand & 0.310^{**} & 0.314^{**} & 0.326^{**} & 0.339^{**} & 0.297^{**} & 0.337^{**} \\ 
+  & (0.004) & (0.003) & (0.032) & (0.045) & (0.059) & (0.054) \\ 
+ Age (Years) & -0.614^{**} & -0.546^{**} & -0.501^{**} & -0.430^{**} & -0.390^{**} & -0.377^{**} \\ 
+  & (0.009) & (0.006) & (0.053) & (0.087) & (0.071) & (0.064) \\ 
+ Rooms (100) & 0.163^{**} & 0.176^{**} & 0.157^{**} & 0.161^{**} & -0.019 & -0.023^{*} \\ 
+  & (0.002) & (0.001) & (0.021) & (0.024) & (0.011) & (0.011) \\ 
+ Penetration$\times$Brand & -82.874^{**} & -84.923^{**} & -65.336^{**} & -76.215^{**} & -56.000^{**} & -56.144^{**} \\ 
+  & (1.404) & (1.054) & (7.137) & (7.888) & (9.786) & (20.810) \\ 
+ Constant & 3.686^{**} & 3.643^{**} &  &  &  &  \\ 
+  & (0.004) & (0.003) &  &  &  &  \\ 
+\hline 
+Observations & \multicolumn{1}{c|}{849,659} & \multicolumn{1}{c}{1,214,861} & \multicolumn{1}{c}{1,214,861} & \multicolumn{1}{c}{1,214,861} & \multicolumn{1}{c}{1,214,723} & \multicolumn{1}{c}{1,214,723} \\ 
+R$^{2}$ & \multicolumn{1}{c|}{0.026} & \multicolumn{1}{c}{0.033} & \multicolumn{1}{c}{0.149} & \multicolumn{1}{c}{0.295} & \multicolumn{1}{c}{0.533} & \multicolumn{1}{c}{0.607} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c|}{0.026} & \multicolumn{1}{c}{0.033} & \multicolumn{1}{c}{0.148} & \multicolumn{1}{c}{0.113} & \multicolumn{1}{c}{0.298} & \multicolumn{1}{c}{0.407} \\ 
+\hline 
+
+\\[-1.8ex] 
+ & \multicolumn{5}{c}{\textit{Overall Quality: Pooled OTA Ratings}} \\ 
+\hline 
+ Penetration & 89.067^{**} & 93.844^{**} & 73.169^{**} & 86.787^{**} & 67.845^{**} & 51.317^{*} \\ 
+  & (1.090) & (0.890) & (8.528) & (8.081) & (8.679) & (21.778) \\ 
+ Brand & 0.315^{**} & 0.305^{**} & 0.328^{**} & 0.346^{**} & 0.309^{**} & 0.321^{**} \\ 
+  & (0.003) & (0.002) & (0.031) & (0.042) & (0.055) & (0.065) \\ 
+ Age (Years) & -0.602^{**} & -0.397^{**} & -0.366^{**} & -0.414^{**} & -0.427^{**} & -0.418^{**} \\ 
+  & (0.008) & (0.006) & (0.035) & (0.087) & (0.075) & (0.070) \\ 
+ Rooms (100) & 0.169^{**} & 0.187^{**} & 0.164^{**} & 0.171^{**} & -0.007 & -0.016 \\ 
+  & (0.001) & (0.001) & (0.022) & (0.026) & (0.017) & (0.013) \\ 
+ Penetration$\times$Brand & -85.115^{**} & -87.637^{**} & -70.496^{**} & -82.645^{**} & -65.449^{**} & -53.440^{*} \\ 
+  & (1.196) & (0.976) & (8.671) & (8.353) & (8.938) & (23.897) \\ 
+ Constant & 3.616^{**} & 3.532^{**} &  &  &  &  \\ 
+  & (0.004) & (0.003) &  &  &  &  \\ 
+\hline
+Observations & \multicolumn{1}{c|}{1,061,327} & \multicolumn{1}{c}{1,476,880} & \multicolumn{1}{c}{1,476,880} & \multicolumn{1}{c}{1,476,880} & \multicolumn{1}{c}{1,476,616} & \multicolumn{1}{c}{1,476,616} \\ 
+R$^{2}$ & \multicolumn{1}{c|}{0.028} & \multicolumn{1}{c}{0.031} & \multicolumn{1}{c}{0.145} & \multicolumn{1}{c}{0.286} & \multicolumn{1}{c}{0.520} & \multicolumn{1}{c}{0.594} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c|}{0.028} & \multicolumn{1}{c}{0.031} & \multicolumn{1}{c}{0.144} & \multicolumn{1}{c}{0.123} & \multicolumn{1}{c}{0.307} & \multicolumn{1}{c}{0.413} \\ 
+\hline 
+
+\textit{Significance levels:}  & \multicolumn{6}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01} \\ 
+
+\end{tabular} 
+}
+
+\end{table} 
