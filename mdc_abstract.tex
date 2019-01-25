@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Author template for Marketing Science (mksc)
+%% Mirko Janc, Ph.D., INFORMS, mirko.janc@informs.org
+%% ver. 0.95, December 2010
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{informs_mod} % current default for manuscript submission
+%\documentclass[mksc,nonblindrev]{informs3}
+
+%%\OneAndAHalfSpacedXI % current default line spacing
+\OneAndAHalfSpacedXII
+%%\DoubleSpacedXII
+%%\DoubleSpacedXI
+
+% If hyperref is used, dvi-to-ps driver of choice must be declared as
+%   an additional option to the \documentclass. For example
+%\documentclass[dvips,mksc]{informs3}      % if dvips is used
+%\documentclass[dvipsone,mksc]{informs3}   % if dvipsone is used, etc.
+
+% Private macros here (check that there is no clash with the style)
+% Cross reference package
+\usepackage{cleveref,morefloats,rotating,graphicx,multirow,tabularx}
+\usepackage{amsmath, amsthm, amssymb} % Math packages
+\usepackage[caption=false]{subfig}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+
+%% setup subfigure captioning
+\captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
+
+% Natbib setup for author-year style
+\usepackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+ 
+\crefformat{section}{\S#2#1#3} 
+\crefformat{subsection}{\S#2#1#3} 
+\crefformat{subsubsection}{\S#2#1#3}
+
+%% Setup of theorem styles. Outcomment only one. 
+%% Preferred default is the first option.
+\newtheorem{prop}{Proposition}
+\TheoremsNumberedThrough     % Preferred (Theorem 1, Lemma 1, Theorem 2)
+%\TheoremsNumberedByChapter  % (Theorem 1.1, Lema 1.1, Theorem 1.2)
+
+%% Setup of the equation numbering system. Outcomment only one.
+%% Preferred default is the first option.
+\EquationsNumberedThrough    % Default: (1), (2), ...
+%\EquationsNumberedBySection % (1.1), (1.2), ...
+
+% In the reviewing and copyediting stage enter the manuscript number.
+%\MANUSCRIPTNO{} % When the article is logged in and DOI assigned to it,
+                 %   this manuscript number is no longer necessary
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%
+
+% Outcomment only when entries are known. Otherwise leave as is and 
+%   default values will be used.
+%\setcounter{page}{1}
+\VOLUME{}%
+\NO{}%
+\MONTH{}% (month or a similar seasonal id)
+\YEAR{}% e.g., 2005
+%\FIRSTPAGE{000}%
+%\LASTPAGE{000}%
+%\SHORTYEAR{00}% shortened year (two-digit)
+%\ISSUE{0000} %
+%\LONGFIRSTPAGE{0001} %
+%\DOI{10.1287/xxxx.0000.0000}%
+
+% Author's names for the running heads
+% Sample depending on the number of authors;
+% \RUNAUTHOR{Jones}
+% \RUNAUTHOR{Jones and Wilson}
+\RUNAUTHOR{Wang, Chaudhry, and Pazgal}
+% \RUNAUTHOR{Jones et al.} % for four or more authors
+% Enter authors following the given pattern:
+%\RUNAUTHOR{}
+
+% Title or shortened title suitable for running heads. Sample:
+% \RUNTITLE{Bundling Information Goods of Decreasing Value}
+% Enter the (shortened) title:
+%\RUNTITLE{}
+
+% Full title. Sample:
+\TITLE{Do online reviews improve product quality? Evidence from hotel reviews on travel sites}
+% Enter the full title:
+%\TITLE{}
+
+% Block of authors and their affiliations starts here:
+% NOTE: Authors with same affiliation, if the order of authors allows, 
+%   should be entered in ONE field, separated by a comma. 
+%   \EMAIL field can be repeated if more than one author
+\ARTICLEAUTHORS{%
+\AUTHOR{Yang Wang}
+\AFF{University of Texas at El Paso, \EMAIL{ywang12@utep.edu}, \URL{yangwangresearch.com}}
+\AUTHOR{Alexander Chaudhry}
+\AFF{Texas Tech University, \EMAIL{alexander.chaudhry@ttu.edu}, \URL{}}
+\AUTHOR{Amit Pazgal}
+\AFF{Rice University, \EMAIL{pazgal@rice.edu}, \URL{}}
+% Enter all authors
+} % end of the block
+
+\ABSTRACT{%
+In this study, we use a game theoretic model to argue that the presence of online reviews can lead to product quality improvements for independent firms selling experience goods. We study the dynamic evolution of persistent trends in online review valence and volume to obtain estimates of latent quality and review platform penetration across 40 thousand hotels using state space models. The use of state space models also resolves measurement noise and sparsity issues presented by the data. Exploiting heterogeneous review platform penetration across markets, we test the predictions of our model to show that markets with greater TripAdvisor penetration exhibit greater gains in independent hotel quality. Independent hotels located in median peak penetration TripAdvisor markets improved their quality by an average of .129 stars as measured using composite online travel agent (OTA) star ratings, erasing 41\% of the advantage held by chains in the absence of online reviews. Additionally, we resolve endogeneity due to potential unobserved confounds correlated with penetration and quality across markets and time. We do so by exploiting review platforms' imperfect market definitions that divide areas of hotel agglomeration into separate review platform markets, thus quasi-exogenously assigning hotels in the same area to varying levels of online review exposure. Our research suggests that online reviews play an important role in facilitating competition on quality.
+}
+
+
+\KEYWORDS{online reviews, state space models, product quality, hotel markets, geographic clustering}
+
+\maketitle
+
+\end{document}
+
+

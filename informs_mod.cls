@@ -1081,12 +1081,12 @@
   \rlap{\VRHDW{0.5pt}{0pt}{\textwidth}}&\\
   \end{tabular*}}}
 
-\RRHFirstLine{\bf\theRUNAUTHOR:\enskip {\it\theRUNTITLE}}% default
-\RRHSecondLine{\fs.7.9.{\theJOURNAL} \theVOLUME(\theNO), \theRUNPAGERANGE,
-  \copyright\,{\theYEAR}\ INFORMS}% default
-\LRHFirstLine{\bf\theRUNAUTHOR:\enskip {\it\theRUNTITLE}}% default
-\LRHSecondLine{\fs.7.9.{\theJOURNAL} \theVOLUME(\theNO), \theRUNPAGERANGE,
-  \copyright\,{\theYEAR}\ INFORMS}% default
+% \RRHFirstLine{\bf\theRUNAUTHOR:\enskip {\it\theRUNTITLE}}% default
+% \RRHSecondLine{\fs.7.9.{\theJOURNAL} \theVOLUME(\theNO), \theRUNPAGERANGE,
+%   \copyright\,{\theYEAR}\ INFORMS}% default
+% \LRHFirstLine{\bf\theRUNAUTHOR:\enskip {\it\theRUNTITLE}}% default
+% \LRHSecondLine{\fs.7.9.{\theJOURNAL} \theVOLUME(\theNO), \theRUNPAGERANGE,
+%   \copyright\,{\theYEAR}\ INFORMS}% default
 
 \def\setoddECRH{\hbox to \textwidth{\fs.7.8.\tabcolsep0pt
   \begin{tabular*}{\textwidth}[b]{l@{\extracolsep\fill}r}
